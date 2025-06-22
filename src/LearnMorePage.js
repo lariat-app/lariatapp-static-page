@@ -4,6 +4,7 @@ import "./LearnMorePage.css";
 import BlogCard from "./BlogCard";
 import logo from "./logo.png";
 import posts from "./posts";
+import { handleNewsletterSubmit } from "./handleNewsletterSubmit";
 
 function LearnMorePage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -62,39 +63,7 @@ function LearnMorePage() {
             <p>Subscribe to our newsletter for exclusive updates and offers.</p>
             <form
                 className="newsletter-form"
-                onSubmit={async (e) => {
-                    e.preventDefault();
-                    const name = e.target.name.value.trim();
-                    const email = e.target.email.value.trim();
-                    const interest = e.target.interest.value.trim();
-
-                    if (!name || !email || !interest) {
-                    alert("Please complete all fields.");
-                    return;
-                    }
-
-                    try {
-                    const response = await fetch("https://script.google.com/macros/s/AKfycbwREU4BUamPiT2iGA60t1k-F6J8N6wLsur9KVaitvD-XR_3g3p1sUXKurXjXjc3LMK2oA/exec", {
-                        method: "POST",
-                        body: JSON.stringify({ name, email, interest }),
-                        headers: {
-                        "Content-Type": "application/json",
-                        },
-                    });
-
-                    const result = await response.json();
-
-                    if (result.result === "success") {
-                        alert("You're subscribed!");
-                        e.target.reset();
-                    } else {
-                        alert("Something went wrong.");
-                    }
-                    } catch (err) {
-                    console.error(err);
-                    alert("Submission failed.");
-                    }
-                }}
+                onSubmit={handleNewsletterSubmit}
                 >
             <div className="form-top-row">
                 <div className="form-field">

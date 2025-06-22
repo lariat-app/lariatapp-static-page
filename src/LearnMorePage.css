@@ -84,6 +84,7 @@
   .newsletter-form textarea {
     padding: 10px;
     font-size: 16px;
+    font-family: inherit;
     border: 1px solid #ccc;
     background-color: #222;
     color: #f2f4f8;
