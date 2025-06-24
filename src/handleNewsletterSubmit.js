@@ -12,7 +12,7 @@ export async function handleNewsletterSubmit(e) {
   
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbw6D4I5t4NZO6lFEPiq5zvhZRrnKJgdKGI1s94_X7xRGSFewMbTCPkThVbs2N_En21WbQ/exec",
+        "https://script.google.com/macros/s/AKfycbx_Lqk_NpsJqAjYGRknCS3Y7Jh2tJtDcOIPOnTLP-X4-UFE8KOEWLxu713BhWsDqrCJ-A/exec",
         {
           method: "POST",
           headers: {
