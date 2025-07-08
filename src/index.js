@@ -6,6 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const redirect = sessionStorage.redirect;
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  window.history.replaceState(null, "", redirect);
+};
+
 root.render(
   <React.StrictMode>
     <BrowserRouter basename="/lariatapp-static-page"> 

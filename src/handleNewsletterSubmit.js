@@ -16,7 +16,7 @@ export async function handleNewsletterSubmit(e) {
         {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json",//indicate that you're b
           },
           body: JSON.stringify({ name, email, interest }),
         }
