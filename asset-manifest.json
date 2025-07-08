@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/lariatapp-static-page/static/css/main.bb5853a6.css",
-    "main.js": "/lariatapp-static-page/static/js/main.6d5c9f6e.js",
+    "main.js": "/lariatapp-static-page/static/js/main.5642bf34.js",
     "static/js/453.d81b8330.chunk.js": "/lariatapp-static-page/static/js/453.d81b8330.chunk.js",
     "static/media/logo.png": "/lariatapp-static-page/static/media/logo.8307865c2bf7bc83df58.png",
     "index.html": "/lariatapp-static-page/index.html",
     "main.bb5853a6.css.map": "/lariatapp-static-page/static/css/main.bb5853a6.css.map",
-    "main.6d5c9f6e.js.map": "/lariatapp-static-page/static/js/main.6d5c9f6e.js.map",
+    "main.5642bf34.js.map": "/lariatapp-static-page/static/js/main.5642bf34.js.map",
     "453.d81b8330.chunk.js.map": "/lariatapp-static-page/static/js/453.d81b8330.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb5853a6.css",
-    "static/js/main.6d5c9f6e.js"
+    "static/js/main.5642bf34.js"
   ]
 }
